@@ -162,32 +162,35 @@
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
+  document.addEventListener('DOMContentLoaded', function () {
     let portfolioContainer = select('.portfolio-container');
+  
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.portfolio-item',
+        filter: '.filter-Featured' // Set the initial filter directly
       });
-
+  
       let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
+  
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
-
+  
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
+        portfolioIsotope.on('arrangeComplete', function () {
+          AOS.refresh();
         });
       }, true);
     }
-
   });
+  
+  
 
   /**
    * Initiate portfolio lightbox 
