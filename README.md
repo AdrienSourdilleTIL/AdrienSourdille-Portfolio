@@ -14,4 +14,5 @@ Email: adriensourdille99@gmail.com
 
 LinkedIn: (https://www.linkedin.com/in/adrien-sourdille-675310163/)
 
+
 Thank you for visiting my Data Science Portfolio. I look forward to sharing my passion for data and analytics with you!
