@@ -11,5 +11,6 @@ Feel free to explore each project in this portfolio by following the provided li
 I am always eager to collaborate and discuss exciting opportunities. If you have any questions, feedback, or potential collaborations, please don't hesitate to reach out:
 
 Email: adriensourdille99@gmail.com
+
 LinkedIn: (https://www.linkedin.com/in/adrien-sourdille-675310163/)
 Thank you for visiting my Data Science Portfolio. I look forward to sharing my passion for data and analytics with you!
